@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Optional: Custom scrollbar styling for a clean Instagram look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+.background {
+  background-color: #000000; /* Black background */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%; /* Ensure the background covers the whole page */
+}
+
+/* whenever you want to move anything on x axis u need justify-content */
+.header {
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18%;
+}
+
+.logo {
+  margin: 3px 0px 0px 20px;
+}
+
+.authentication {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+/* align-items: align the elemnts vertically */
+
+.btn {
+  background-color: #4150f7;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.signin-link {
+  color: #9099fc;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.signin-link:hover {
+  color: #a3bcff;
+  text-decoration: underline;
+}
+
+/* for content logo part */
+.content {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Description section */
+.content-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.username {
+  font-size: 25px;
+  color: #ddd;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.blueTick-image {
+  /* width: 20px; */
+  height: 18px;
+  margin-left: 8px;
+  margin-top: 2px;
+}
+
+.dropDown-image {
+  height: 18px;
+  margin-left: 15px;
+  margin-top: 2px;
+}
+.name {
+  font-size: 13px;
+  color: #ddd;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.stats .number {
+  font-weight: bold;
+}
+
+.bio {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.bio-description {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+.bio-description::before {
+  margin-right: 5px;
+}
+
+/* section section */
+.content-section {
+  margin-top: 40px;
+  border-bottom: 1px solid #262626;
+  padding-bottom: 0px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.tab-icon:hover {
+  opacity: 1;
+}
+
+/* Posts Section with Grid Layout */
+.posts-section .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 1px;
+}
+
+.grid-item {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.grid-item-icons {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  position: relative;
+}
+
+.grid-item-icons img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.grid-item-icons .icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 17px;
+  height: 17px;
+  z-index: 10;
+}
+
+/* Reels and Tagged Sections */
+.reels-section,
+.tagged-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.reels-section img,
+.tagged-section img {
+  width: 200px;
+  height: auto;
+}
+
+/* Related Accounts Section */
+.related-accounts {
+  max-width: 935px;
+  margin: 60px auto;
+  padding: 0 20px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.related-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.related-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.see-all {
+  color: #a2aaff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.see-all:hover {
+  text-decoration: underline;
+}
+
+/* Cards container */
+.related-accounts-cards {
+  display: flex;
+  gap: 5px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+}
+
+/* Hide scrollbar in WebKit browsers */
+.related-accounts-cards::-webkit-scrollbar {
+  height: 6px;
+}
+
+.related-accounts-cards::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.related-accounts-cards::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Each card */
+.related-account-card {
+  background-color: #111;
+  border: 1px solid #262626;
+  border-radius: 10px;
+  width: 160px;
+  min-width: 160px;
+  text-align: center;
+  padding: 20px 10px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.related-account-card:hover {
+  transform: translateY(-4px);
+  border-color: #444;
+}
+
+/* Profile image */
+.related-account-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+/* Username & name */
+.related-account-username {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+  align-items: center;
+}
+
+.related-account-name {
+  color: #aaa;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* Follow button */
+.follow-btn {
+  background-color: #262626;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.follow-btn:hover {
+  background-color: #333;
+}
+
+.blueTick-image-small {
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+}
